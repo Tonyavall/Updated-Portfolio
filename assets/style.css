@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #202020;
+}
+
+p {
+    color: white;
+    text-indent: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   color: white; 
+}
+
+.navbar {
+    padding: 1em;
+    border: 1px solid red;
+    height: 30px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    opacity: .80;
+    position: sticky;
+}
+
+.dark-mode {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+article {
+    border: 1px solid red;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#photo-container {
+    background-color: black;
+    background-image: url('../images/selfie.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 325px;
+    height: 325px;
+    margin: 1em;
+    border-radius: 10em;
+}
+
+#description {
+    border: .1px solid red;
+    width: 325px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+}
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pair-item {
+    margin: 0 1em 0 1em;
+    padding: 1em;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-images {
+    border-radius: 10px;
+    width: 300px;
+    height: 175px;
+    background-color: white;
+}
