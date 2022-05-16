@@ -5,17 +5,27 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+#dark {
     background-color: #202020;
+    color: white;
+    transition: background-color .6s linear;
+}
+
+#light {
+    background-color: white;
+    color: black;
+    transition: background-color .6s linear;
 }
 
 p {
-    color: white;
     text-indent: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-   color: white; 
-}
+/* h1, h2, h3, h4, h5, h6 {
+    
+} */
 
 .navbar {
     padding: 1em;
@@ -25,15 +35,38 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #202020;
+    opacity: .92;
 }
 
 .navbar a {
-    color: white;
+    color: inherit;
     text-decoration: none;
     margin-left: 1em;
     margin-right: 1em;
     opacity: .80;
-    position: sticky;
+}
+
+#nav-name {
+    font-size: 1.6rem;
+}
+
+#socials {
+    display: flex;
+    justify-content: right;
+    padding-top: 1em;
+    margin: 0 0 1em 0;
+}
+
+#socials a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.25em;
+    padding: .5em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 0em .5em 0em .5em;
 }
 
 .dark-mode {
@@ -54,6 +87,16 @@ article {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    animation: .4s ease-in appear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #photo-container {
@@ -90,6 +133,18 @@ article {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: .4s ease-in slideUp;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .pair-item {
