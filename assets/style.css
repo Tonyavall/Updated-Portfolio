@@ -23,7 +23,12 @@ p {
     text-indent: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     animation: .4s ease-in appear;
     border-bottom: 1px solid #202020;
@@ -84,13 +89,15 @@ h2 {
     width: 30px;
     height: 30px;
     margin-right: .5em;
+    margin-top: 1em;
+    transform: scale(1.25);
 }
 
 .drop-down {
     display: none;
     width: 30px;
     height: 30px;
-    margin-left: .5em;
+    margin-top: .5em;
 }
 
 .about-me {
@@ -107,6 +114,7 @@ h2 {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -153,6 +161,7 @@ h2 {
         transform: translateY(10px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -173,7 +182,7 @@ h2 {
     width: 300px;
     height: 175px;
     background-color: white;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -188,7 +197,7 @@ h2 {
     height: 300px;
     width: 500px;
     border-radius: 10px;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     border: 1px solid #202020;
@@ -230,11 +239,11 @@ h2 {
 .works-desc-pair .title::before {
     content: "";
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%;  
-    opacity: .75; 
+    width: 100%;
+    height: 100%;
+    opacity: .75;
     z-index: -1;
     background-color: #88CCCA;
     border-radius: 10px;
@@ -252,12 +261,15 @@ h2 {
     .navbar {
         width: 80vw;
     }
+
     .links-a {
         display: none;
     }
+
     .drop-down {
         display: flex;
     }
+
     #socials a {
         transform: scale(.75);
         margin: 0em .25em 0em .25em;
