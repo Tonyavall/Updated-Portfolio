@@ -3,7 +3,7 @@ Unofficial Portfolio (Week 9)
 
 Deployed Site [here.](https://tonyavall.github.io/Updated-Portfolio/)
 
-![Deployed Landing Page](deployed.png)
+![Deployed Landing Page](images/deployed.jpg)
 
 Stack: HTML, CSS, JavaScript
 
