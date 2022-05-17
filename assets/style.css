@@ -24,8 +24,13 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     animation: .4s ease-in appear;
     border-bottom: 1px solid #202020;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .navbar {
@@ -55,7 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #socials {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     padding-top: 1em;
     margin: 0 0 1em 0;
 }
@@ -69,11 +75,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0em .5em 0em .5em;
 }
 
+.btns-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .dark-mode {
     width: 30px;
     height: 30px;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-right: .5em;
+}
+
+.drop-down {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: .5em;
 }
 
 .about-me {
@@ -129,7 +146,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     animation: .4s ease-in slideUp;
-    border-bottom: 1px solid #202020;
 }
 
 @keyframes slideUp {
@@ -149,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid #202020;
 }
 
 .projects-imgs {
@@ -229,4 +246,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .works-desc-pair a {
     color: #45518d;
+}
+
+@media only screen and (max-width: 932px) {
+    .navbar {
+        width: 80vw;
+    }
+    .links-a {
+        display: none;
+    }
+    .drop-down {
+        display: flex;
+    }
+    #socials a {
+        transform: scale(.75);
+        margin: 0em .25em 0em .25em;
+    }
 }
